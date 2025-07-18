@@ -10,13 +10,16 @@ const Appointment = async ({ params: { userId } }: SearchParamProps) => {
     <div className="flex h-screen max-h-screen">
       <section className="remove-scrollbar container my-auto">
         <div className="sub-container max-w-[860px] flex-1 justify-between">
-          <Image
-            src="/assets/icons/logo-full.svg"
-            height={1000}
-            width={1000}
-            alt="logo"
-            className="mb-12 h-10 w-fit"
-          />
+          <div className="align-center mb-12 flex items-center gap-x-3 text-xl font-bold">
+            <Image
+              src="/assets/icons/avkalan_logo.png"
+              height={1000}
+              width={1000}
+              alt="patient"
+              className="h-10 w-fit rounded"
+            />
+            <span>Avkalan Labs</span>
+          </div>
 
           <AppointmentForm
             patientId={patient?.$id}
