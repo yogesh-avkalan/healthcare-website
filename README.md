@@ -41,9 +41,6 @@ If you prefer visual learning, this is the perfect resource for you. Follow our 
 
 A healthcare patient management application that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications, all built using Next.js.
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **34k+** members. It's a place where people help each other out.
-
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -53,6 +50,116 @@ If you're getting started and need assistance or face any bugs, join our active 
 - TailwindCSS
 - ShadCN
 - Twilio
+
+## <a name="links">📁 Directory Structure</a>
+
+```
+HealthCare/
+├── app/                       # Main app entry using App Router (pages, layouts, routes)
+|     │   favicon.ico
+|     │   global-error.tsx
+|     │   globals.css
+|     │   layout.tsx
+|     │   loading.tsx
+|     │   page.tsx
+|     │
+|     ├───admin/
+|     │       page.tsx
+|     │
+|     ├───api
+|     │   └───sentry-example-api/
+|     │           route.ts
+|     │
+|     ├───patients/
+|     │   └───[userId]/
+|     │       ├───new-appointment/
+|     │       │   │   page.tsx
+|     │       │   │
+|     │       │   └───success/
+|     │       │           page.tsx
+|     │       │
+|     │       └───register/
+|     │               page.tsx
+|     │
+|     └───sentry-example-page/
+|             page.tsx
+|
+├── components/                # Reusable UI components
+|     │   AppointmentModal.tsx
+|     │   CustomFormField.tsx
+|     │   FileUploader.tsx
+|     │   PasskeyModal.tsx
+|     │   StatCard.tsx
+|     │   StatusBadge.tsx
+|     │   SubmitButton.tsx
+|     │   ThemeProvider.tsx
+|     │
+|     ├───forms/
+|     │       AppointmentForm.tsx
+|     │       PatientForm.tsx
+|     │       RegisterForm.tsx
+|     │
+|     ├───table/
+|     │       columns.tsx
+|     │       DataTable.tsx
+|     │
+|     └───ui/
+|             alert-dialog.tsx
+|             button.tsx
+|             checkbox.tsx
+|             command.tsx
+|             dialog.tsx
+|             form.tsx
+|             input-otp.tsx
+|             input.tsx
+|             label.tsx
+|             popover.tsx
+|             radio-group.tsx
+|             select.tsx
+|             separator.tsx
+|             table.tsx
+|             textarea.tsx
+|
+├── constants/                 # Static values/constants used across the app
+|        index.ts
+|
+├── lib/                       # Utility functions and helpers
+|     |  appwrite.config.ts
+|     |  utils.ts
+|     |  validation.ts
+|     |
+|     └───actions/
+|             appointment.actions.ts
+|              patient.actions.ts
+|
+|
+├── public/                    # Static assets (images, fonts, etc.)
+|        assets/
+
+|
+├── types/                     # Global TypeScript types
+|         appwrite.types.ts
+|         index.d.ts
+|
+├── .env.local                 # Local environment variables
+├── .eslintrc.json             # ESLint configuration
+├── .gitignore                 # Files/folders to ignore in Git
+├── components.json            # Possibly dynamic component loader
+├── instrumentation.ts         # Custom instrumentation (analytics, metrics)
+├── instrumentation-client.ts  # Client-side instrumentation logic
+├── next.config.mjs            # Next.js configuration
+├── next-env.d.ts              # TypeScript Next.js env typings
+├── package.json               # Project metadata and scripts
+├── package-lock.json          # Dependency lock file
+├── postcss.config.mjs         # PostCSS configuration (used by Tailwind)
+├── README.md                  # Project description and usage
+├── sentry.client.config.ts    # Sentry config for client side
+├── sentry.edge.config.ts      # Sentry config for edge middleware
+├── sentry.server.config.ts    # Sentry config for server side
+├── tailwind.config.ts         # Tailwind CSS configuration
+└── tsconfig.json              # TypeScript compiler options
+
+```
 
 ## <a name="features">🔋 Features</a>
 
@@ -91,8 +198,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/healthcare.git
-cd healthcare
+git clone https://github.com/yogesh-avkalan/healthcare-website.git
+cd healthcare-website
 ```
 
 **Installation**
@@ -996,25 +1103,3 @@ export const StatusIcon = {
 
 Public assets used in the project can be found [here](https://drive.google.com/file/d/1yGvWFeSaH1_-aiQ1gejT23lqz5979RKB/view?usp=sharing)
 
-## <a name="more">🚀 More</a>
-
-**Advance your skills with Next.js 14 Pro Course**
-
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://jsmastery.pro/next14" target="_blank">
-<img src="https://github.com/sujatagunale/EasyRead/assets/151519281/557837ce-f612-4530-ab24-189e75133c71" alt="Project Banner">
-</a>
-
-<br />
-<br />
-
-**Accelerate your professional journey with the Expert Training program**
-
-And if you're hungry for more than just a course and want to understand how we learn and tackle tech challenges, hop into our personalized masterclass. We cover best practices, different web skills, and offer mentorship to boost your confidence. Let's learn and grow together!
-
-<a href="https://www.jsmastery.pro/masterclass" target="_blank">
-<img src="https://github.com/sujatagunale/EasyRead/assets/151519281/fed352ad-f27b-400d-9b8f-c7fe628acb84" alt="Project Banner">
-</a>
-
-#
