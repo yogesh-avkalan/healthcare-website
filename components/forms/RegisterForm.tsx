@@ -356,6 +356,7 @@ const RegisterForm = ({ user }: { user: User }) => {
             control={form.control}
             name="treatmentConsent"
             label="I consent to receive treatment for my health condition."
+          
           />
 
           <CustomFormField

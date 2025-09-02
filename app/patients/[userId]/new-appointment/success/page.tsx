@@ -21,15 +21,15 @@ const RequestSuccess = async ({
     <div className=" flex h-screen max-h-screen px-[5%]">
       <div className="success-img">
         <Link href="/">
-          <div className="align-center mb-12 flex items-center gap-x-3 text-xl font-bold">
+          <div className="align-center mb-6 flex items-center justify-center gap-x-[10px] text-xl font-bold">
             <Image
-              src="/assets/icons/avkalan_logo.png"
+              src="/assets/icons/logo-icon.svg"
               height={1000}
               width={1000}
               alt="patient"
               className="h-10 w-fit rounded"
             />
-            <span>Avkalan Labs</span>
+            <span>HealthCare</span>
           </div>
         </Link>
 
@@ -76,7 +76,7 @@ const RequestSuccess = async ({
           </Link>
         </Button>
 
-        <p className="copyright">© 2024 CarePluse</p>
+        <p className="copyright">© 2024 HealthCare</p>
       </div>
     </div>
   );
