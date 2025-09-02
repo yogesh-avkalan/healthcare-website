@@ -65,7 +65,7 @@
   }
 
   .side-img {
-    @apply hidden object-contain md:block;
+    @apply hidden object-cover md:block;
   }
 
   .copyright {
@@ -183,7 +183,7 @@
 
   /* =====  SHADCN OVERRIDES */
   .shad-primary-btn {
-    @apply bg-blue-500 text-white !important;
+    @apply bg-[#1570EF] rounded-lg text-white !important;
   }
 
   .shad-danger-btn {
@@ -195,7 +195,7 @@
   }
 
   .shad-input-label {
-    @apply text-14-medium text-dark-700 !important;
+    @apply text-14-medium text-[#CECFD2] !important;
   }
 
   .shad-input {
@@ -259,7 +259,7 @@
   }
 
   .shad-alert-dialog {
-    @apply space-y-5 bg-transparent border-dark-500 outline-none !important;
+    @apply space-y-5 bg-[#0C0E12] border-[#373A41] outline-none !important;
   }
 
   .shad-sheet-content button {

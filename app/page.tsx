@@ -11,8 +11,8 @@ const Home = ({ searchParams }: SearchParamProps) => {
     <div className="flex h-screen max-h-screen">
       {isAdmin && <PasskeyModal />}
 
-      <section className="remove-scrollbar container my-auto">
-        <div className="sub-container max-w-[496px]">
+      <section className="remove-scrollbar container ">
+        <div className="sub-container max-w-[496px] justify-center">
           <div className="align-center mb-6 flex items-center justify-center gap-x-[10px] text-xl font-bold">
             <Image
               src="/assets/icons/logo-icon.svg"
@@ -26,11 +26,11 @@ const Home = ({ searchParams }: SearchParamProps) => {
 
           <PatientForm />
 
-          <div className="text-14-regular mt-20 flex justify-between">
+          <div className="text-14-regular w-full flex justify-between absolute bottom-0 left-0 p-8">
             <p className="justify-items-end text-gray-600 xl:text-left">
               © 2025 Avkalan Labs
             </p>
-            <Link href="/?admin=true" className="text-blue-500">
+            <Link href="/?admin=true" className="text-blue-500 ">
               Admin
             </Link>
           </div>

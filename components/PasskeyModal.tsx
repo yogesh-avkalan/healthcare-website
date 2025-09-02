@@ -69,8 +69,8 @@ export const PasskeyModal = () => {
     <AlertDialog open={open} onOpenChange={setOpen}>
       <AlertDialogContent className="shad-alert-dialog">
         <AlertDialogHeader>
-          <AlertDialogTitle className="flex items-start justify-between">
-            Admin Access Verification
+          <AlertDialogTitle className="flex items-start justify-between text-[30px]">
+            Verify OTP
             <Image
               src="/assets/icons/close.svg"
               alt="close"
@@ -80,25 +80,30 @@ export const PasskeyModal = () => {
               className="cursor-pointer"
             />
           </AlertDialogTitle>
-          <AlertDialogDescription>
-            To access the admin page, please enter the passkey.
-          </AlertDialogDescription>
+          
         </AlertDialogHeader>
-        <div>
+        <div className="space-y-[6px]">
+          <AlertDialogDescription>
+            Secure code
+          </AlertDialogDescription>
           <InputOTP
             maxLength={6}
             value={passkey}
             onChange={(value) => setPasskey(value)}
           >
-            <InputOTPGroup className="shad-otp">
+            <InputOTPGroup className="shad-otp flex items-center justify-center">
               <InputOTPSlot className="shad-otp-slot" index={0} />
               <InputOTPSlot className="shad-otp-slot" index={1} />
               <InputOTPSlot className="shad-otp-slot" index={2} />
+              <span className="text-[60px] text-[#373A41] text-center flex items-center justify-center">-</span>
               <InputOTPSlot className="shad-otp-slot" index={3} />
               <InputOTPSlot className="shad-otp-slot" index={4} />
               <InputOTPSlot className="shad-otp-slot" index={5} />
             </InputOTPGroup>
           </InputOTP>
+            <AlertDialogDescription>
+            Please Enter the OTP sent to your registered mobile number.
+          </AlertDialogDescription>
 
           {error && (
             <p className="shad-error text-14-regular mt-4 flex justify-center">
@@ -111,7 +116,7 @@ export const PasskeyModal = () => {
             onClick={(e) => validatePasskey(e)}
             className="shad-primary-btn w-full"
           >
-            Enter Admin Passkey
+            Verify
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
