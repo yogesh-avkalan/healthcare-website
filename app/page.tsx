@@ -13,15 +13,15 @@ const Home = ({ searchParams }: SearchParamProps) => {
 
       <section className="remove-scrollbar container my-auto">
         <div className="sub-container max-w-[496px]">
-          <div className="align-center mb-12 flex items-center gap-x-3 text-xl font-bold">
+          <div className="align-center mb-6 flex items-center justify-center gap-x-[10px] text-xl font-bold">
             <Image
-              src="/assets/icons/avkalan_logo.png"
+              src="/assets/icons/logo-icon.svg"
               height={1000}
               width={1000}
               alt="patient"
               className="h-10 w-fit rounded"
             />
-            <span>Avkalan Labs</span>
+            <span>HealthCare</span>
           </div>
 
           <PatientForm />

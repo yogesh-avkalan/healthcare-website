@@ -29,10 +29,10 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen  bg-bark-300 font-sans antialiased",
+          "min-h-screen bg-[#0C0E12] font-sans antialiased",
           fontSans.variable
         )}>
-        <ThemeProvider attribute="class" defaultTheme="">
+        <ThemeProvider attribute="class" defaultTheme="dark">
           {children}
         </ThemeProvider>
       </body>
